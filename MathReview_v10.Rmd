@@ -1,7 +1,7 @@
 ---
 title: "Math Review - MIDS W203 - Statistics"
 author: "w203 Staff"
-date: "12 August 2020"
+date: "24 August 2020"
 version: "11"
 header-includes:
    - \usepackage{amssymb}
@@ -49,7 +49,7 @@ a^n \times b^n &= (a \cdot b)^n \notag \\
 a^n / a^m &= a^{n-m} \notag \\
 a^n / b^n &= (a/b)^n\notag \\
 (b^n)^m &= b^{n \cdot m}\notag \\
-b^{n^m} &= b^{m^n} \notag \\
+(b^n)^m &= (b^m)^n \notag \\
 \sqrt[m]{b^n} &= b^{n/m} \notag \\
 \notag \\
 \notag \\
@@ -113,7 +113,7 @@ plot(1:5,seq(-5,5,length=5),type="n",xlim=c(-8,8), ylim=c(-8,8),
  abline(h=0, col="black", lty=2 )
 ```
 
-The circle not a function because for $x=-2$, there are two values of y that satisfy the equation.  In general, if you can draw a vertical line through two or more points on a graph, it's not a $function$.  The problem arises from the squared term on $y$. Here $y$ can take on the positive or negative value, making the outcome variable not a single value.  
+The circle is not a function because for $x=-2$, there are two values of y that satisfy the equation.  In general, if you can draw a vertical line through two or more points on a graph, it's not a $function$.  The problem arises from the squared term on $y$. Here $y$ can take on the positive or negative value, making the outcome variable not a single value.  
 
 
 
@@ -521,7 +521,21 @@ $$\frac{d}{dx}(u^n) =  nu^{n-1}\frac{du}{dx}$$
 $$\frac{d}{dx}(e^u) =  e^u\frac{du}{dx}$$
 $$\frac{d}{dx}ln(u) =  \frac{1}{u}\frac{du}{dx}$$
 
-### i. An application - The Wage Equation
+### i. The Chain Rule
+
+(From Paul's Online Math notes [Paul Dawkins at Lamar University] https://tutorial.math.lamar.edu/classes/calci/chainrule.aspx)
+
+Suppose we have two functions $f(x)$ and $g(x)$ and they are both differentiable.
+
+If we define $h(x) = f(g(x))$, then the derivative of $h(x)$ is:
+
+$$ h'(x) = f'(g(x)) \cdot g'(x) $$
+
+Put another way, if we have $y = f(u)$ and $u = g(x)$ then the derivative of $y$ is:
+
+$$ \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
+
+### j. An application - The Wage Equation
 
 Let's look at one example you will see this semester, the wage equation, where wage is a function of education. Note that Woolridge uses $log$ to denote the natural logarithm with a base of $e$, differing from $log_{10}$, which has a base of 10.
 
