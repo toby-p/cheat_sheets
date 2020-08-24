@@ -521,7 +521,21 @@ $$\frac{d}{dx}(u^n) =  nu^{n-1}\frac{du}{dx}$$
 $$\frac{d}{dx}(e^u) =  e^u\frac{du}{dx}$$
 $$\frac{d}{dx}ln(u) =  \frac{1}{u}\frac{du}{dx}$$
 
-### i. An application - The Wage Equation
+### i. The Chain Rule
+
+(From Paul's Online Math notes [Paul Dawkins at Lamar University] https://tutorial.math.lamar.edu/classes/calci/chainrule.aspx)
+
+Suppose we have two functions $f(x)$ and $g(x)$ and they are both differentiable.
+
+If we define $h(x) = f(g(x))$, then the derivative of $h(x)$ is:
+
+$$ h'(x) = f'(g(x)) \cdot g'(x) $$
+
+Put another way, if we have $y = f(u)$ and $u = g(x)$ then the derivative of $y$ is:
+
+$$ \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
+
+### j. An application - The Wage Equation
 
 Let's look at one example you will see this semester, the wage equation, where wage is a function of education. Note that Woolridge uses $log$ to denote the natural logarithm with a base of $e$, differing from $log_{10}$, which has a base of 10.
 
