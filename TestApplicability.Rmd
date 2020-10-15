@@ -2,7 +2,16 @@
 title: "Test Applicability Cheat"
 author: "Kevin Martin on behalf of the w203 Instructional Team"
 date: "10/15/2020"
-output: pdf_document
+output: 
+  github_document: default
+  pdf_document: default
+
+#if you don't put this "knit: (function..." crap, then it only produces the first output file in the list  
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(
+    inputFile, encoding = encoding,
+    output_format = c('github_document', 'pdf_document')) 
+    })
 ---
 
 ```{r setup, include=FALSE}
